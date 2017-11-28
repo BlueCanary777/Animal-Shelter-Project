@@ -1,0 +1,49 @@
+<form method="post" action="/animals/<%= @animal.id %>">
+  <input type="hidden" name="_method" value="put">
+
+  <div class="field-group">
+    <label for="name-field">Name:</label>
+    <div class="field">
+      <input
+      type="text"
+      name="name"
+      id="name"
+      value="<%= @animal.name %>"
+      />
+    </div>
+  </div>
+
+  <div class="field-group">
+    <label for="date-field">Date:</label>
+    <div class="field">
+      <input
+      type="date"
+      name="admission_date"
+      id="admission_date"
+      value="<%= @animal.admission_date() %>"
+      />
+    </div>
+  </div>
+
+    <button class="button big-button">Update Animal</button>
+</form>
+
+<form  action="/animals/<%= @animal.id %>/toggle-adoptable" method="post">
+
+
+
+  <div class="field-group">
+    <label for="adoptability">Current Animal Adoptability:</label>
+    <div class="field">
+      <p>Adoptable
+      <input type="radio" name="adoptability" id="adoptability" value="t" <%= "checked" if @animal.adoptable == "t" %> />
+      </p>
+      <p>Not Adoptable
+        <input type="radio" name="adoptability" id="adoptability" value="f" <%= "checked" if @animal.adoptable == "f" %> />
+      </p>
+    </div>
+  </div>
+
+  <button class="button big-button">Commit Adoptability Change</button>
+
+  </form>
