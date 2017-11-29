@@ -1,0 +1,14 @@
+<%= @animal.name %>
+<%= @animal.admission_date %>
+<%= @owners.first.pretty_name %>
+
+<div class="field-group">
+  <label for="owner-field">Owner:</label>
+  <div class="field">
+    <select name="owner_id">
+      <% for owner in @owners %>
+      <option value="<%= owner.id %>"><%= owner.pretty_name %></option>
+      <% end %>
+    </select>
+  </div>
+</div>

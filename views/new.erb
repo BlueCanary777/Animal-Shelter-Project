@@ -1,0 +1,47 @@
+<h1>Hello world</h1>
+
+<!-- new.erb-->
+<form method="post" action="/animals">
+
+
+<form>
+
+  <div class="field-group">
+    <label for="name-field" class="label">Animal Name:</label>
+    <div class="field">
+      <input
+        type="text"
+        name="name"
+        id="name-field"
+        placeholder="Animal name"
+        required
+      />
+   </div>
+  </div>
+
+  <div class="field-group">
+    <label for="date-field" class="label">Admission Date:</label>
+    <div class="field">
+      <input
+        type="date"
+        name="admission_date"
+        id="date-field"
+        required
+      />
+    </div>
+  </div>
+
+  <div class="field-group">
+    <label for="adoptability">Adoptability:</label>
+    <div class="field">
+      <p>Adoptable
+      <input type="radio" name="adoptable" id="adoptability" value="t"  />
+      </p>
+      <p>Not Adoptable
+        <input type="radio" name="adoptable" id="adoptability" value="f"  />
+      </p>
+    </div>
+  </div>
+
+  <button class="big-button button">Order Pizza</button>
+</form>

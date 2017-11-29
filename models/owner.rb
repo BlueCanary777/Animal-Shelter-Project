@@ -24,4 +24,28 @@ class Owner
     @id = owner_data.first()['id'].to_i
   end
 
+  def delete()
+    sql = "DELETE FROM owners
+    WHERE id = $1"
+    values = [@id]
+    SqlRunner.run(sql, values)
+  end
+
+  def Owner.find(id)
+    sql = "SELECT * FROM owners
+    WHERE id = $1"
+    values = [id]
+    owner = SqlRunner.run( sql, values )
+    result = Owner.new( owners.first )
+    return result
+  end
+
+  def Owner.all()
+    sql = "SELECT * FROM owners"
+    values = []
+    owner = SqlRunner.run(sql, values)
+    output = owner.map {|owner| Owner.new(owner)}
+    return output
+  end
+
 end
