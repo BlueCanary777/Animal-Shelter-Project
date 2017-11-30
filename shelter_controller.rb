@@ -39,7 +39,11 @@ delete '/animals/:id' do # delete
   redirect to '/animals'
 end
 
-get '/all' do
+get '/animals/ownersanimals' do
   @owners = Owner.all
   erb (:ownersanimals)
+end
+
+get '/' do
+  erb (:home)
 end
