@@ -48,4 +48,12 @@ class Owner
     return output
   end
 
+  def owners_and_their_animals()
+    sql = "SELECT first_name, last_name, name
+          FROM owners
+                JOIN animals
+                ON owners.id = animals.owner_id
+          ORDER BY last_name ASC;"
+  end
+
 end

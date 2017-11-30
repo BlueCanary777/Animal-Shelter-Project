@@ -59,20 +59,20 @@ class Animal
 
   # Write method to bring back an owner object for an animal
 
-  # def owner()
-  #   sql = "SELECT * FROM owners
-  #   WHERE id = $1"
-  #   values = [@owner_id]
-  #   owner_data = SqlRunner.run( sql, values ).first
-  #   result = Owner.new(owner_data)
-  # end
+  def owner()
+    sql = "SELECT * FROM owners
+    WHERE id = $1"
+    values = [@owner_id]
+    owner_data = SqlRunner.run( sql, values ).first
+    result = Owner.new(owner_data)
+  end
 
-  # def delete()
-  #   sql = "DELETE FROM animals
-  #   WHERE id = $1"
-  #   values = [@id]
-  #   SqlRunner.run(sql, values)
-  # end
+  def delete()
+    sql = "DELETE FROM animals
+    WHERE id = $1"
+    values = [@id]
+    SqlRunner.run(sql, values)
+  end
 
   # def assign_to_new_owner(owner_id)
   #  # animal = Animal.find(@id)

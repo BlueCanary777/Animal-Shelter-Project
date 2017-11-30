@@ -52,3 +52,8 @@
 
     <button class="button big-button">Update Animal</button>
 </form>
+
+<form method="post" action="/animals/<%= @animal.id %>">
+  <input type="hidden" name="_method" value="delete">
+  <button class="big-button button">Delete Animal</button>
+</form>

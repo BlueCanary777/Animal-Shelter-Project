@@ -3,6 +3,7 @@
     <p>Name: <%= animal.name() %></p>
     <p>Admission Date: <%= animal.admission_date %></p>
     <p>Adoptability: <%= animal.adoptable %></p>
+    <p>Owner: <%= animal.owner.pretty_name %></p>
     <p><a class="body-link" href="/animals/<%= animal.id %>/edit">Edit Details</a></p>
     <hr>
   </div>
