@@ -48,12 +48,16 @@ class Owner
     return output
   end
 
-  def owners_and_their_animals()
-    sql = "SELECT first_name, last_name, name
-          FROM owners
-                JOIN animals
-                ON owners.id = animals.owner_id
-          ORDER BY last_name ASC;"
-  end
+  # def owners_and_their_animals()
+  #   sql = "SELECT first_name, last_name, name
+  #         FROM owners
+  #               JOIN animals
+  #               ON owners.id = animals.owner_id
+  #         ORDER BY last_name ASC
+  #WHERE owners.id = $1;"
+  # values = [@id]
+  # owner_data = SqlRunner.run(sql, values)
+  # return .map_items(owner_data)
+  # end
 
 end
