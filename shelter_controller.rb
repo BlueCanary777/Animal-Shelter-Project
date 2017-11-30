@@ -38,3 +38,8 @@ delete '/animals/:id' do # delete
   animal.delete()
   redirect to '/animals'
 end
+
+get '/all' do
+  @owners = Owner.all
+  erb (:ownersanimals)
+end

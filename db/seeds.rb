@@ -41,7 +41,7 @@ animal3 = Animal.new({
       "name" => "Spark",
       "admission_date" => Date.new(2017, 11, 22),
       "adoptable" => true,
-      "owner_id" => nil
+      "owner_id" => owner3.id
       })
 
 animal4 = Animal.new({

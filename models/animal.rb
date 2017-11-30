@@ -74,14 +74,7 @@ class Animal
     SqlRunner.run(sql, values)
   end
 
-  # def assign_to_new_owner(owner_id)
-  #  # animal = Animal.find(@id)
-  #  sql = "UPDATE animals SET
-  #  (owners_id) = ($1)
-  #  WHERE id = $2"
-  #  values = [owner_id, @id]
-  #  SqlRunner.run( sql, values )
-  # end
+  
 
 
 end

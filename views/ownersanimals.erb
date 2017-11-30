@@ -1,0 +1,12 @@
+<div class = "owners-animals">
+  <table>
+    <th>Owner Name</th>
+    <th>Animal Name</th>
+    <% @owners.each do |owner| %>
+    <tr>
+      <td><%= owner.pretty_name  %></td>
+      <td><% owner.animals.each do |animal| %> <%= animal.name %> <% end%> </td> 
+    </tr>
+    <% end %>
+  </table>
+</div>
