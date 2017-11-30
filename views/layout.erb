@@ -5,9 +5,19 @@
   <head>
     <meta charset="utf-8">
     <title>Animal Shelter</title>
-    <link rel = "stylesheet" href = "style.css">
+    <link rel = "stylesheet" href = "/style.css">
   </head>
   <body>
+    <nav class="top-navigation">
+      <ul class="links">
+        <li>
+          <a href="/animals">Current Records</a>
+        </li>
+        <li>
+          <a href="/animals/new">New Records</a>
+        </li>
+      </ul>
+    </nav>
     <%= yield %>
   </body>
 </html>
