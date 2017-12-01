@@ -21,6 +21,8 @@ post '/animals' do
   redirect to '/animals'
 end
 
+
+
 get '/animals/:id/edit' do
   @animal = Animal.find(params[:id])
   @owners = Owner.all()

@@ -1,3 +1,65 @@
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Indie Flower', cursive;
+  background-color: #fff;
+  color: #444;
+  font-weight: 400;
+  font-size: 30px;
+  text-rendering: optimizeLegibility;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/friend1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 85%;
+  left: 90%;
+  transform: translate(-50%, -50%)
+}
+
+h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 250%;
+  font:weight: 300;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px, 40px;
+  font-weight: 300;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 36px;
+}
+
+.btn-full {
   background-color: #785EDD;
+}
+
+.btn-full:link, .btn-full:visited {
+  background-color: #785EDD;
+  border: 1px solid #785EDD;
+}
+
+.btn-hover {
+  color: #453E4A;
 }

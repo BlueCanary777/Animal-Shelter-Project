@@ -33,7 +33,7 @@ animal1 = Animal.new({
 animal2 = Animal.new({
     "name" => "Tilly",
     "admission_date" => Date.new(2016, 12, 31),
-    "adoptable" => false,
+    "adoptable" => true,
     "owner_id" => owner2.id
     })
 
@@ -47,7 +47,7 @@ animal3 = Animal.new({
 animal4 = Animal.new({
         "name" => "Fodo",
         "admission_date" => Date.new(2017, 8, 14),
-        "adoptable" => false,
+        "adoptable" => true,
         "owner_id" => owner3.id
         })
 
